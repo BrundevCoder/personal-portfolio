@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1efef;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.22rem;
+}
+
+.header-block,
+.myName {
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+}
+
+.myName {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.13);
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  padding: 1rem 1.15rem;
+  border: 2px solid;
+  border-radius: 12px;
+  box-shadow: 3px 5px 0;
+}
+
+.hamburger-menu:hover {
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 2px 3px 0;
+}
+
+.hamburger-menu:active {
+  transform: translateX(4px) translateY(4px);
+  box-shadow: 1px 1.5px 0;
+}
