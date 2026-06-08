@@ -64,6 +64,7 @@ main {
 }
 
 .sec-title {
+  word-break: break-all;
   text-align: center;
   font-family: "Exo 2";
   font-size: 2.75rem;
@@ -71,6 +72,10 @@ main {
 
 .sec {
   background: #f1efef;
+}
+
+.about-me {
+  padding: .5rem;
 }
 
 .about-me-para-container {
@@ -107,6 +112,8 @@ main {
 .programming-languages-sec {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 600px;
 }
@@ -207,4 +214,37 @@ main {
   background: #1ED760;
   border: 4px solid #0b8a37;
   box-shadow: 4px 4px 0 #086428;
+}
+
+@media (max-width: 650px) {
+  .languages-grid {
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .languages-grid {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sec-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .social-link {
+    padding: .25rem;
+  }
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 175px) {
+  .about-me-para-container {
+    padding: .05rem;
+  }
 }
