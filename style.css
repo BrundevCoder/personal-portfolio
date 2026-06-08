@@ -119,6 +119,7 @@ main {
 }
 
 .languages-grid {
+  width: 100%;
   margin-top: 1.55rem;
   display: grid;
   row-gap: 15px;
